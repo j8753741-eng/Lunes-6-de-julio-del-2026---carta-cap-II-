@@ -1,664 +1,690 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>✦ Donde Siempre Vuelve Mi Corazón ✦ | Capítulo II</title>
+<title>LUNES 6 DE JULIO DEL 2026 - CARTA</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
 
 <style>
 
 *{
+
 margin:0;
 padding:0;
 box-sizing:border-box;
-}
 
-html{
-scroll-behavior:smooth;
 }
 
 body{
 
 background:
-radial-gradient(circle at top,#f8f1de 0%,#efe3c5 40%,#e5d5b2 100%);
-font-family:'Cormorant Garamond',serif;
-color:#453528;
-display:flex;
-justify-content:center;
-padding:55px 18px;
+radial-gradient(circle at center,#5c4327 0%,#352112 45%,#170d08 100%);
+
 min-height:100vh;
 
-}
+font-family:'Cormorant Garamond',serif;
 
-/*=========================
-PÁGINA DEL LIBRO
-=========================*/
+padding:60px 20px;
 
-.page{
-
-position:relative;
-width:100%;
-max-width:920px;
-
-background:
-linear-gradient(rgba(255,255,255,.18),rgba(255,255,255,.18)),
-repeating-linear-gradient(
-to bottom,
-transparent 0px,
-transparent 31px,
-rgba(120,92,52,.045) 32px);
-
-border:2px solid #b79863;
-
-border-radius:10px;
-
-padding:90px 80px 120px;
-
-box-shadow:
-
-0 0 0 8px #efe3c8,
-0 0 0 10px #b59663,
-0 18px 45px rgba(0,0,0,.25);
-
-overflow:hidden;
+overflow-x:hidden;
 
 }
 
-/*=========================
-FILIGRANAS
-=========================*/
+/* Mesa */
 
-.page::before{
-
-content:"❦";
-
-position:absolute;
-
-top:22px;
-left:34px;
-
-font-size:65px;
-
-color:#c8a86c;
-
-opacity:.23;
-
-transform:rotate(-15deg);
-
-}
-
-.page::after{
-
-content:"❧";
-
-position:absolute;
-
-right:34px;
-bottom:22px;
-
-font-size:65px;
-
-color:#c8a86c;
-
-opacity:.23;
-
-transform:rotate(18deg);
-
-}
-
-.corner{
-
-position:absolute;
-font-size:34px;
-color:#c9ab71;
-opacity:.55;
-
-}
-
-.c1{
-top:22px;
-right:28px;
-}
-
-.c2{
-bottom:24px;
-left:28px;
-transform:rotate(180deg);
-}
-
-/*=========================
-MARCO INTERIOR
-=========================*/
-
-.inner{
-
-border:1.8px solid rgba(165,132,79,.55);
-
-padding:55px;
-
-position:relative;
-
-}
-
-.inner::before{
+body::before{
 
 content:"";
 
-position:absolute;
+position:fixed;
 
-top:10px;
-left:10px;
-right:10px;
-bottom:10px;
+inset:0;
 
-border:1px solid rgba(191,159,98,.35);
+background:
+
+repeating-linear-gradient(
+90deg,
+rgba(255,255,255,.015),
+rgba(255,255,255,.015) 3px,
+transparent 3px,
+transparent 80px
+);
+
+opacity:.35;
 
 pointer-events:none;
 
 }
 
-/*=========================
-ENCABEZADO
-=========================*/
+/* Libro */
 
 .book{
 
+max-width:950px;
+
+margin:auto;
+
+background:#4b2816;
+
+border-radius:18px;
+
+padding:28px;
+
+box-shadow:
+
+0 25px 60px rgba(0,0,0,.65);
+
+border:6px solid #8f693d;
+
+position:relative;
+
+}
+
+/* Grabado dorado */
+
+.cover-title{
+
 text-align:center;
 
 font-family:'Cinzel',serif;
 
-font-size:14px;
+font-size:2rem;
 
-letter-spacing:5px;
+color:#f7d98d;
 
-color:#856134;
+letter-spacing:3px;
 
-margin-bottom:12px;
+text-shadow:
 
-text-transform:uppercase;
-
-}
-
-.divider{
-
-display:flex;
-align-items:center;
-justify-content:center;
-gap:14px;
-
-margin-bottom:28px;
-
-color:#b18d52;
-
-}
-
-.divider span{
-
-font-size:23px;
-
-}
-
-.divider::before,
-.divider::after{
-
-content:"";
-
-width:130px;
-height:1px;
-background:#b99863;
-
-}
-
-.chapter{
-
-font-family:'Cinzel',serif;
-
-text-align:center;
-
-font-size:17px;
-
-letter-spacing:6px;
-
-color:#75532f;
-
-margin-bottom:14px;
-
-}
-
-.title{
-
-font-family:'Cinzel',serif;
-
-font-size:38px;
-
-line-height:1.45;
-
-text-align:center;
-
-color:#4a3422;
-
-margin-bottom:18px;
-
-text-transform:uppercase;
-
-}
-
-.subtitle{
-
-text-align:center;
-
-font-size:18px;
-
-font-style:italic;
-
-color:#8b6a42;
-
-margin-bottom:45px;
-
-}
-
-/*=========================
-TEXTO
-=========================*/
-
-.content{
-
-font-size:28px;
-
-line-height:1.95;
-
-text-align:justify;
-
-color:#473324;
-
-}
-
-.content p{
+0 2px 0 #7b582c,
+0 0 12px rgba(255,217,141,.35);
 
 margin-bottom:22px;
 
 }
 
-.content strong{
+/* Página */
 
-font-weight:700;
+.page{
 
-color:#2e2015;
+background:
 
-}
+linear-gradient(#f9f0d9,#efe1bf);
 
-.content p:first-of-type::first-letter{
+border-radius:10px;
 
-float:left;
+padding:65px;
 
-font-size:82px;
+position:relative;
 
-line-height:.82;
+box-shadow:
 
-padding-right:10px;
-
-padding-top:12px;
-
-font-family:'Cinzel',serif;
-
-color:#7f5d35;
+inset 0 0 30px rgba(0,0,0,.12);
 
 }
 
-/*=========================
-ADORNO CENTRAL
-=========================*/
+/* Textura */
 
-.ornament{
+.page::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
+
+background-image:
+
+radial-gradient(rgba(90,70,40,.05) 1px,transparent 1px);
+
+background-size:18px 18px;
+
+opacity:.55;
+
+pointer-events:none;
+
+}
+
+/* Filigranas */
+
+.corner{
+
+position:absolute;
+
+font-size:44px;
+
+color:#b08a45;
+
+opacity:.7;
+
+}
+
+.c1{
+
+top:15px;
+left:22px;
+
+}
+
+.c2{
+
+top:15px;
+right:22px;
+
+transform:rotate(90deg);
+
+}
+
+.c3{
+
+bottom:15px;
+left:22px;
+
+transform:rotate(-90deg);
+
+}
+
+.c4{
+
+bottom:15px;
+right:22px;
+
+transform:rotate(180deg);
+
+}
+
+/* Encabezado */
+
+.header{
 
 text-align:center;
 
-font-size:28px;
-
-color:#bc9655;
-
-margin:38px 0;
-
-letter-spacing:10px;
+margin-bottom:55px;
 
 }
 
-/*=========================
-FIRMA
-=========================*/
-
-.signature{
-
-margin-top:35px;
-
-text-align:right;
-
-font-size:26px;
-
-color:#4d3726;
-
-}
-
-.signature strong{
-
-display:block;
-
-margin-top:10px;
-
-font-size:28px;
-
-}
-
-/*=========================
-PIE DE PÁGINA
-=========================*/
-
-.footer{
-
-margin-top:60px;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
+.header h1{
 
 font-family:'Cinzel',serif;
 
-font-size:14px;
+font-size:2rem;
 
-letter-spacing:3px;
+line-height:1.5;
 
-color:#8b6940;
+color:#5b3213;
 
-}
-
-.page-number{
-
-border:1px solid #b99763;
-
-padding:7px 20px;
-
-border-radius:50px;
-
-background:rgba(255,248,232,.6);
+margin-bottom:22px;
 
 }
 
-.chapter-mark{
+.date{
+
+font-size:1rem;
+
+color:#7b5c2e;
+
+letter-spacing:1px;
+
+}
+
+/* Saludo */
+
+.greeting{
+
+margin-top:35px;
+
+font-family:'Great Vibes',cursive;
+
+font-size:3rem;
+
+color:#7b4323;
+
+margin-bottom:28px;
+
+}
+
+/* Texto */
+
+p{
+
+font-size:1.35rem;
+
+line-height:2.05;
+
+text-align:justify;
+
+color:#4d3520;
+
+margin-bottom:22px;
+
+}
+
+/* Letra capital */
+
+.first::first-letter{
+
+font-size:5rem;
+
+float:left;
+
+line-height:.9;
+
+padding-right:10px;
+
+font-family:'Cinzel',serif;
+
+color:#8d5a2d;
+
+}
+
+strong{
+
+font-weight:700;
+
+}
+
+.divider{
+
+text-align:center;
+
+font-size:26px;
+
+margin:35px 0;
+
+color:#9b7643;
+
+}
+
+/* ========= PASAR LA PÁGINA ========= */
+
+.page-turn{
+
+margin:55px auto 25px;
+
+text-align:center;
+
+}
+
+.page-turn-text{
+
+font-family:'Cormorant Garamond',serif;
+
+font-size:1.25rem;
+
+color:#7a5b39;
+
+line-height:1.8;
+
+margin-bottom:28px;
 
 font-style:italic;
 
 }
 
-/*=========================
-RESPONSIVE
-=========================*/
+.page-corner{
 
-@media(max-width:768px){
+display:inline-flex;
 
-.page{
+align-items:center;
 
-padding:45px 22px 90px;
+justify-content:center;
 
-}
+width:170px;
 
-.inner{
+height:70px;
 
-padding:28px;
+background:linear-gradient(145deg,#f8f0dc,#ead8b3);
 
-}
+border:2px solid #c9a36b;
 
-.title{
+text-decoration:none;
 
-font-size:28px;
+color:#6b4725;
 
-}
+font-family:'Cinzel',serif;
 
-.content{
+font-size:.9rem;
 
-font-size:22px;
+letter-spacing:2px;
 
-line-height:1.85;
+clip-path:polygon(0 0,100% 0,100% 75%,82% 100%,0 100%);
 
-}
+box-shadow:
+0 10px 25px rgba(0,0,0,.18);
 
-.content p:first-of-type::first-letter{
-
-font-size:65px;
+transition:.35s;
 
 }
 
-.divider::before,
-.divider::after{
+.page-corner:hover{
 
-width:55px;
+transform:translateY(-5px) rotate(-2deg);
+
+box-shadow:
+0 18px 35px rgba(0,0,0,.28);
 
 }
 
-}
+.page-corner span{
 
+padding:0 12px;
+
+text-align:center;
+
+}
 </style>
+
 </head>
 
 <body>
 
+<div class="book">
+
+<div class="cover-title">
+
+✦ Donde Siempre Vuelve Mi Corazón ✦
+
+</div>
+
 <div class="page">
 
-<div class="corner">❁</div>
-<div class="corner c2">❁</div>
+<div class="corner c1">❦</div>
+<div class="corner c2">❦</div>
+<div class="corner c3">❦</div>
+<div class="corner c4">❦</div>
 
-<div class="inner">
+<div class="header">
 
-<div class="book">
-✦ Donde Siempre Vuelve Mi Corazón ✦
-</div>
+<h1>
 
-<div class="divider">
-<span>❦</span>
-</div>
+<strong>
 
-<div class="chapter">
-CAPÍTULO II
-</div>
+CAPÍTULO II<br><br>
 
-<h1 class="title">
 DONDE MIS MANOS APRENDEN A PEDIR PERMISO<br>
+
 Y MI CORAZÓN APRENDE A HABLAR
+
+</strong>
+
 </h1>
 
-<div class="subtitle">
-Escrito durante la noche del 6 de julio del año 2026,
-cuando el amor comprendió que también se demuestra escuchando.
+<div class="date">
+
+<strong>Lunes, 6 de julio de 2026 — Noche</strong>
+
 </div>
 
-<div class="ornament">
-❦ ✧ ❦
+<div class="greeting">
+
+<strong>Mi niña hermosa:</strong>
+
 </div>
 
-<div class="content">
+<p class="first">
 
-<p><strong>Mi niña hermosa:</strong></p>
-
-<p>
 En esta noche del <strong>6 de julio del 2026</strong>, mientras el cielo guarda silencio y las estrellas parecen vigilar los juramentos que nacen del amor verdadero, quiero abrir una vez más las páginas de este libro que escribimos con cada mirada, con cada abrazo y con cada latido compartido.
+
 </p>
 
 <p>
+
 Hay algo que desde hace tiempo quiero contarte con toda la sinceridad que vive dentro de mi corazón.
+
 </p>
 
 <p>
+
 Tú sabes que soy una persona que ama a través del contacto. Si estoy cerca de ti, mi alma parece olvidar que existen las distancias. Mis manos, casi sin darme cuenta, siempre buscan encontrarte, porque acariciarte se ha convertido en una de las maneras más bonitas que conozco para decirte <strong>"te amo"</strong> sin necesidad de pronunciar una sola palabra.
+
 </p>
 
 <p>
+
 Por eso, muchas veces termino acariciando tus pies. No porque sea una costumbre cualquiera, sino porque casi siempre es lo que tengo más cerca de mí cuando estamos juntos. Me nace hacerlo. Me transmite paz. Es una pequeña forma de sentir que, aunque el mundo entero siga girando, yo puedo quedarme unos segundos contemplando la inmensa fortuna que tengo de compartir mi tiempo contigo.
+
 </p>
 
+<div class="divider">
+
+❦ ❧ ❦
+
+</div>
+
 <p>
+
 Pero también quiero decirte algo que considero importante.
+
 </p>
 
 <p>
+
 Si alguna vez alguna de esas caricias llega a incomodarte, por favor, dímelo. Nunca quisiera que un gesto que para mí significa ternura termine haciéndote sentir incómoda. Tu tranquilidad siempre será más importante que cualquier costumbre mía. Amar también significa aprender a escuchar, respetar y entender los límites de la persona que uno más quiere.
+
 </p>
 
-<div class="ornament">
-✦ ❧ ✦
-</div>
-
 <p>
+
 Y hay otra cosa que esta noche pesa un poco sobre mi pecho.
+
 </p>
 
 <p>
-Quiero pedirte perdón por el comentario que hice ayer sobre tu cabello, cuando dije que estaba bueno para halarlo. Lo dije siguiendo el momento de la conversación, después de escucharte decir que sentías que tu cabello ya estaba <strong>"en las últimas"</strong> porque no habías podido definirlo. Para mí fue una ocurrencia sin intención de hacerte sentir mal, pero cuando me respondiste: <strong>«¿Cuál era la necesidad?»</strong>, sentí que quizá mis palabras no llegaron como yo imaginaba.
+
+Quiero pedirte perdón por el comentario que hice ayer sobre tu cabello, cuando dije que estaba bueno para halarlo. Lo dije siguiendo el momento de la conversación, después de escucharte decir que sentías que tu cabello ya estaba <strong>"en las últimas"</strong> porque no habías podido definirlo. Para mí fue una ocurrencia sin intención de hacerte sentir mal, pero cuando me respondiste: <strong>"¿Cuál era la necesidad?"</strong>, sentí que quizá mis palabras no llegaron como yo imaginaba.
+
 </p>
 
 <p>
+
 Desde ese instante me quedé pensando en ello.
+
 </p>
 
 <p>
+
 Porque lo último que quisiera en este mundo es que sintieras que hago comentarios para incomodarte o hacerte sentir insegura. Jamás sería esa mi intención. Si mis palabras te hicieron sentir así, de verdad lo lamento. <strong>Perdóname.</strong>
+
 </p>
 
-<p>
-La verdad es que, cuando te miro, pocas veces encuentro algo que no me parezca hermoso. Aun en esos días en los que tú ves imperfecciones, yo sigo viendo a la mujer que logra acelerar mi corazón con solo aparecer frente a mí. Tus ojos, tu sonrisa, tu cabello, tu manera de reír, tu forma de existir... todo en ti tiene un lugar especial dentro de mí.
-</p>
+<div class="divider">
 
-<div class="ornament">
-❦ ✧ ❦
+✦ ✧ ✦
+
 </div>
 
 <p>
+
+La verdad es que, cuando te miro, pocas veces encuentro algo que no me parezca hermoso. Aun en esos días en los que tú ves imperfecciones, yo sigo viendo a la mujer que logra acelerar mi corazón con solo aparecer frente a mí. Tus ojos, tu sonrisa, tu cabello, tu manera de reír, tu forma de existir... todo en ti tiene un lugar especial dentro de mí.
+
+</p>
+
+<p>
+
 Quizá todavía me falta aprender muchas cosas sobre la manera correcta de expresar lo que siento. Tal vez, de vez en cuando, alguna palabra mía tropiece antes de llegar a donde realmente nace: mi corazón. Pero prométeme que nunca dejaré de intentarlo, porque si hay algo que deseo hacer todos los días, es convertirme en un mejor hombre para ti.
+
 </p>
 
 <p>
+
 Quiero que este capítulo quede escrito no solo como una disculpa, sino también como una promesa.
+
 </p>
 
 <p>
+
 La promesa de seguir amándote con la misma intensidad, pero con una sensibilidad cada vez mayor; de seguir llenándote de cariño, pero escuchando siempre lo que tú sientes; de seguir buscando tu mano, tus abrazos y tu cercanía, sin olvidar jamás que el amor más bonito es aquel que hace sentir segura a la persona que ama.
+
 </p>
 
 <p>
+
 Y si algún día vuelves a leer estas líneas, quiero que recuerdes una sola cosa: <strong>mis manos siempre querrán encontrarte, pero mi corazón siempre pedirá permiso antes de quedarse.</strong>
+
 </p>
 
 <p>
+
 Porque te amo más de lo que estas páginas podrán contar.
+
 </p>
 
 <p>
+
 Y mientras existan noches como esta, seguiré escribiendo nuestra historia, convencido de que cada capítulo lleva tu nombre grabado entre los latidos del mío.
+
 </p>
 
-<div class="signature">
+<div style="margin-top:65px;">
 
-Con todo el amor que cabe en mi alma,
+<p style="
+font-family:'Great Vibes',cursive;
+font-size:2.7rem;
+color:#7b4323;
+text-align:right;
+margin-bottom:8px;
+">
+
+<strong>Con todo el amor que cabe en mi alma,</strong>
+
+</p>
+
+<p style="
+font-size:1.3rem;
+line-height:1.9;
+text-align:right;
+color:#4d3520;
+">
 
 <strong>
 El hombre que cada día elige enamorarse un poco más de ti. 💜
 </strong>
 
-</div>
-
-<div class="ornament">
-❦ ❁ ❦
-</div>
-
-<blockquote class="final-quote">
-<strong>
-Y si alguna vez el tiempo vuelve a preguntarme cuál fue el instante en que aprendí que amar también era escuchar, respetar y pedir permiso para tocar el corazón de quien más amo, señalaré esta página con una sonrisa eterna, porque aquí comprendí que las caricias más sinceras nacen primero en el alma; y desde esta noche prometo que cada abrazo, cada roce y cada palabra llevarán siempre la delicadeza con la que se sostiene el mayor tesoro de una vida, pues no deseo ser solamente el hombre que más te ama, sino también el lugar donde siempre puedas sentirte segura, comprendida y profundamente amada. Esta promesa queda escrita para siempre con el nombre de la única mujer capaz de convertir mis latidos en un hogar: VALERIA PETRO VILLAZÓN.
-</strong>
-</blockquote>
-
-<div class="wax-section">
-
-<div class="wax-text">
-✦ Abrir el poema de esta noche ✦
-</div>
-
-<a href="PEGA_AQUÍ_EL_ENLACE_DEL_POEMA" class="wax-seal">
-
-<div class="seal-center">
-❦
-</div>
-
-</a>
+</p>
 
 </div>
 
-<div class="footer">
-
-<div class="chapter-mark">
-✦ Donde Siempre Vuelve Mi Corazón ✦
-</div>
-
-<div class="page-number">
-Página II
-</div>
-
-</div>
-
-</div>
-</div>
+<hr style="
+margin:55px auto;
+width:82%;
+border:none;
+border-top:1px solid rgba(120,85,40,.35);
+">
 
 <style>
 
-.final-quote{
+/*==========================
+GRABADO FINAL
+==========================*/
 
-margin-top:55px;
-padding:28px 30px;
+.book-quote{
 
-border-top:1px solid rgba(184,150,92,.6);
-border-bottom:1px solid rgba(184,150,92,.6);
+margin:0 auto 55px;
 
-font-size:25px;
-line-height:1.9;
-text-align:center;
-font-style:italic;
-color:#5a3e25;
+max-width:760px;
 
-background:rgba(255,248,236,.45);
+padding:28px 36px;
+
+border:2px solid rgba(176,138,69,.45);
+
+border-radius:10px;
+
+background:rgba(255,248,228,.45);
+
+position:relative;
 
 }
 
-.wax-section{
+.book-quote::before{
 
-margin-top:65px;
+content:"❦";
+
+position:absolute;
+
+top:-18px;
+left:50%;
+
+transform:translateX(-50%);
+
+background:#efe1bf;
+
+padding:0 14px;
+
+font-size:26px;
+
+color:#9b7643;
+
+}
+
+.book-quote p{
+
+margin:0;
+
+text-align:center;
+
+font-size:1.45rem;
+
+line-height:2;
+
+color:#6d3f72;
+
+font-family:'Cormorant Garamond',serif;
+
+text-shadow:
+
+0 0 6px rgba(171,92,255,.18);
+
+}
+
+</style>
+
+<div class="book-quote">
+
+<p>
+
+<strong>
+
+Y si alguna vez el tiempo vuelve a preguntarme cuál fue el instante en que aprendí que amar también era escuchar, respetar y pedir permiso para tocar el corazón de quien más amo, señalaré esta página con una sonrisa eterna, porque aquí comprendí que las caricias más sinceras nacen primero en el alma; y desde esta noche prometo que cada abrazo, cada roce y cada palabra llevarán siempre la delicadeza con la que se sostiene el mayor tesoro de una vida, pues no deseo ser solamente el hombre que más te ama, sino también el lugar donde siempre puedas sentirte segura, comprendida y profundamente amada. Esta promesa queda escrita para siempre con el nombre de la única mujer capaz de convertir mis latidos en un hogar:<br><br>
+
+VALERIA PETRO VILLAZÓN.
+
+</strong>
+
+</p>
+
+</div>
+
+
+<style>
+
+/*=========================================
+SELLO DE CERA
+=========================================*/
+
+.seal-container{
 
 display:flex;
-flex-direction:column;
-align-items:center;
+
 justify-content:center;
 
-}
-
-.wax-text{
-
-font-family:'Cinzel',serif;
-
-letter-spacing:4px;
-
-font-size:15px;
-
-color:#886338;
-
-margin-bottom:20px;
-
-text-transform:uppercase;
+margin:45px 0 15px;
 
 }
 
 .wax-seal{
 
-width:120px;
-height:120px;
+width:165px;
+height:165px;
 
 border-radius:50%;
 
@@ -668,73 +694,178 @@ display:flex;
 align-items:center;
 justify-content:center;
 
+text-align:center;
+
+padding:18px;
+
+font-family:'Cinzel',serif;
+
+font-size:.82rem;
+
+font-weight:700;
+
+letter-spacing:1px;
+
+color:#fff7ff;
+
 background:
-radial-gradient(circle at 35% 30%,#d16a6a,#8d1d26 70%,#671118);
+radial-gradient(circle at 35% 30%,
+#d88cff 0%,
+#a93fff 45%,
+#6d179f 75%,
+#4c0c74 100%);
+
+border:5px solid #f2d89d;
 
 box-shadow:
-0 8px 18px rgba(0,0,0,.28),
-inset 0 3px 8px rgba(255,255,255,.25),
-inset 0 -5px 10px rgba(0,0,0,.35);
+0 12px 25px rgba(0,0,0,.35),
+inset 0 3px 10px rgba(255,255,255,.25),
+inset 0 -8px 15px rgba(0,0,0,.25);
 
-transition:.35s;
+transition:.35s ease;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.wax-seal::before{
+
+content:"";
+
+position:absolute;
+
+width:210px;
+height:40px;
+
+background:rgba(255,255,255,.22);
+
+transform:rotate(-35deg);
+
+top:18px;
+left:-60px;
 
 }
 
 .wax-seal:hover{
 
-transform:scale(1.08) rotate(3deg);
+transform:scale(1.08) rotate(-2deg);
+
+box-shadow:
+0 20px 35px rgba(0,0,0,.45);
 
 }
 
-.seal-center{
+.ribbon{
 
-width:82px;
-height:82px;
+width:6px;
 
-border-radius:50%;
+height:95px;
 
-border:2px solid rgba(255,225,175,.75);
+background:linear-gradient(#b3884d,#f4dca6,#b3884d);
 
-display:flex;
-align-items:center;
-justify-content:center;
+margin:0 auto;
 
-font-size:40px;
-
-color:#f7ddb0;
-
-text-shadow:0 0 8px rgba(0,0,0,.25);
+border-radius:5px;
 
 }
 
-@media(max-width:768px){
+.end-message{
 
-.final-quote{
+margin-top:28px;
 
-font-size:21px;
-padding:22px;
+text-align:center;
 
-}
+font-family:'Great Vibes',cursive;
 
-.wax-seal{
+font-size:2.3rem;
 
-width:100px;
-height:100px;
+color:#7b4323;
 
 }
 
-.seal-center{
+.page-number{
 
-width:68px;
-height:68px;
+margin-top:40px;
 
-font-size:34px;
+text-align:center;
 
-}
+font-family:'Cinzel',serif;
+
+font-size:.95rem;
+
+letter-spacing:5px;
+
+color:#9a7742;
 
 }
 
 </style>
 
+<div class="seal-container">
+
+<a
+class="wax-seal"
+target="_blank"
+href="">
+
+📜<br>
+
+ABRIR EL<br>
+
+POEMA DE<br>
+
+ESTA NOCHE
+
+</a>
+<div class="page-turn">
+
+    <p class="page-turn-text">
+
+        <strong>El siguiente capítulo ya ha comenzado a escribirse...</strong><br>
+
+        Solo falta que vuelvas a pasar la página.
+
+    </p>
+
+    <a href="" class="page-corner">
+
+        <span>✦ Pasar la página ✦</span>
+
+    </a>
+
+</div>
+</div>
+
+<div class="ribbon"></div>
+
+<div class="end-message">
+
+<strong>
+Cada página de este libro siempre encontrará el camino de regreso hacia ti.
+</strong>
+
+</div>
+
+<div class="page-number">
+
+❦ &nbsp; II &nbsp; ❦
+
+<div class="next-chapter">
+
+<p>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
 </body>
+
     </html>
